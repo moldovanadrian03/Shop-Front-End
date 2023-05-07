@@ -7,5 +7,6 @@ import { Product } from '../product';
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent {
-  @Input() product: Product | undefined;
+  @Input() product: Product | undefined ;
+
 }
