@@ -1,19 +1,36 @@
 {
-  "posts": [
+  "products": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "rom",
+      "description": "an amazing drink",
+      "price": "71.99",
+      "available": "true",
+      "imageLink": "???",
+      "id": 1
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "water",
+      "description": "an amazing drink",
+      "price": "1.99",
+      "available": "true",
+      "imageLink": "???",
+      "id": 2
+    },
+    {
+      "name": "soda",
+      "description": "an amazing drink",
+      "price": "4.99",
+      "available": "true",
+      "imageLink": "???",
+      "id": 3
+    },
+    {
+      "name": "sparkling water",
+      "description": "an amazing drink",
+      "price": "1.99",
+      "available": "false",
+      "imageLink": "???",
+      "id": 4
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
