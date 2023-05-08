@@ -19,7 +19,6 @@ export class ProductService {
   constructor(private httpClient: HttpClient) { }
 
   getProducts(): Observable<Product[]> {
-    console.log("Server Products: ");
     return this.httpClient.get<Product[]>(this.baseURL, this.httpOptions);
   }
 

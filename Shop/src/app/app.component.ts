@@ -11,13 +11,23 @@ export class AppComponent implements OnInit{
   title = 'Shop';
   products: Product[] | undefined;
 
-  constructor(private productService: ProductService) { }
+
+  constructor(public productService: ProductService) {
+    this.products = this.products;
+    console.log(this.products, "adsadas");
+  }
 
   ngOnInit(): void {
     this.productService.getProducts().subscribe(products => {
-      console.log("Products list: ");
+      console.log("Products list: ", products);
       this.products = products;
+
+      this.products.forEach(currProd => {
+        console.log("Product: ", currProd);
+      });
+
     });
   }
+
 
 }

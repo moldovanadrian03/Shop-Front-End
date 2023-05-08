@@ -1,3 +1,5 @@
 <div *ngFor="let currProd of products">
-  <app-product *ngIf="true"></app-product>
+  <app-product *ngIf="currProd.isAvailable == true"></app-product>
 </div>
+
+
