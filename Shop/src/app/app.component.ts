@@ -10,12 +10,12 @@ import { ProductModel } from './models/product-model';
 })
 export class AppComponent implements OnInit{
   title = 'Shop';
-  products: Product[]  = new ProductModel();
+  products: Product[]  = new Array<ProductModel>;
 
 
   constructor(public productService: ProductService) {
     this.products = this.products;
-    console.log(this.products, "adsadas");
+    console.log("Product array initialized: ", this.products);
   }
 
   ngOnInit(): void {
