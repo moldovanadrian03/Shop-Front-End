@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from './Services/product.service';
 import { Product } from './product';
+import { ProductModel } from './models/product-model';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,7 @@ import { Product } from './product';
 })
 export class AppComponent implements OnInit{
   title = 'Shop';
-  products: Product[] | undefined;
+  products: Product[]  = new ProductModel();
 
 
   constructor(public productService: ProductService) {
